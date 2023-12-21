@@ -1,0 +1,32 @@
+/Kelestar
+|-- /client                   # Front-end source code
+|   |-- /public               # Static files like HTML, images, etc.
+|   |-- /src                  # React source files
+|       |-- /components       # Shared React components
+|       |-- /pages            # Page components
+|           |-- /customer     # Customer-specific pages
+|           |-- /vendor       # Vendor-specific pages
+|       |-- /hooks            # Custom React hooks
+|       |-- /utils            # Utility functions and helpers
+|       |-- /styles           # CSS or styling files
+|       |-- App.js            # Main React application file
+|       |-- index.js          # Entry point for React app
+|   |-- package.json          # Front-end dependencies
+|
+|-- /server                   # Back-end source code
+|   |-- /config               # Configuration files and environment variables
+|   |-- /controllers          # Business logic
+|       |-- /customer         # Customer-specific controllers
+|       |-- /vendor           # Vendor-specific controllers
+|   |-- /routes               # API routes
+|       |-- /customer         # Customer-specific routes
+|       |-- /vendor           # Vendor-specific routes
+|   |-- /models               # Database models
+|   |-- /middleware           # Custom middleware
+|   |-- index.js              # Entry point for server
+|   |-- package.json          # Back-end dependencies
+|
+|-- /database                 # Database-related files
+|-- /docs                     # Documentation and specifications
+|-- .gitignore                # Specifies untracked files to ignore
+|-- README.md                 # Project overview and documentation
