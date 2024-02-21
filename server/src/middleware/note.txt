@@ -1,0 +1,6 @@
+Middleware functions have access to the request 
+and response objects and the next middleware function in 
+the application’s request-response cycle. This 
+directory is for code that handles tasks like authentication, 
+error handling, logging, or any operations that should be executed
+ between receiving the request and sending the response.
