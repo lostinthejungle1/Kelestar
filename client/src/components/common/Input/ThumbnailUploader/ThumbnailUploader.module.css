@@ -1,0 +1,45 @@
+.thumbnail_uploader .uploader{
+    width: 90%;
+    font-size: 1.1em;
+    padding: .5em 1em;
+    border-radius: 10px;
+    border:2px solid #E8ECF4;
+    background-color: #F7F8F9;
+    margin-bottom: .4em;
+    /* font-family: monospace; */
+}
+
+.thumbnail_uploader label{
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: .4em;
+}
+.uploader{
+    text-align: center;
+}
+.file_input{
+    display: none;
+}
+
+.upload_icon{
+    font-size: 1.5em;
+    color:#74B318;
+}
+
+.preview{
+    width: 50%;
+    position: relative;
+    margin-bottom: .5em;
+}
+
+.preview img{
+    width: 100%;
+}
+
+.remove_preview{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 1.5em;
+    color: #909090;
+}
