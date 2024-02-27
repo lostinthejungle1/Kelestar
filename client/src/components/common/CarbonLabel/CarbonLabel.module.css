@@ -1,0 +1,19 @@
+.label{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.level{
+    width: 100px;
+}
+
+.categorization{
+    width: 80px;
+}
+
+.number{
+
+}
