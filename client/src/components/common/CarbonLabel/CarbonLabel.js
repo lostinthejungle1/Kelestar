@@ -7,7 +7,7 @@ import cateA from './assets/cateA.png'
 import cateB from './assets/cateB.png'
 import cateC from './assets/cateC.png'
 
-function CarbonLabel({carbonLevel,footprintNumber,withNumber}){
+function CarbonLabel({carbonLevel,footprintNumber,withNumber,className}){
     //it would be better if this could be drawn using svg, try this later
     const getLevelSrc = (level)=>{
         switch(level){
@@ -33,7 +33,7 @@ function CarbonLabel({carbonLevel,footprintNumber,withNumber}){
                 return cateA;
         }
     }
-    return (<div className={styles.label}>
+    return (<div className={`${styles.label} ${className}`}>
         <img className={styles.level} src={getLevelSrc(carbonLevel)} alt={carbonLevel} />
         {withNumber&&<img className={styles.categorization} src={getCateSrc(carbonLevel)} alt={carbonLevel} />}
         {withNumber&&<span className={styles.number}>{footprintNumber+'Kg CO2e '}</span>}

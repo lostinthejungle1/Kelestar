@@ -1,5 +1,5 @@
 .label{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,13 +7,16 @@
 }
 
 .level{
-    width: 100px;
+    width: 3em;
+    width: 50%;
+    display: block;
 }
 
 .categorization{
-    width: 80px;
+    width: 50%;
+    
 }
 
 .number{
-
+    font-size: .7em;
 }
