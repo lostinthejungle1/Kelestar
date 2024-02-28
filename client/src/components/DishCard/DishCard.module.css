@@ -1,0 +1,55 @@
+.card{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* border: 1px solid black; */
+    height: 100px;
+    align-items: center;
+    justify-items: center;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.thubnail{
+    /* width: 20%; */
+    width: 80%;
+    grid-column: 1/2;
+    grid-row: 1/4;
+    border-radius: 10%;
+
+}
+
+.dishName{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: self-start;
+    align-self: self-end;
+    font-size: 1.3em;
+}
+
+.providingVendor{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: self-start;
+    color: rgba(0, 0, 0, .5);
+    font-size: .8em;
+    align-self: self-start;
+    margin-top: .5em;
+}
+
+.dishPrice{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: self-start;
+    align-self: self-start;
+}
+
+.label{
+    grid-column: 3/4;
+    grid-row: 1/4;
+    transform: scale(.9);
+    width: 100%;
+
+}
