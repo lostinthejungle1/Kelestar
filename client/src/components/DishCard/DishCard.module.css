@@ -1,16 +1,28 @@
+.container{
+    width: 100%;
+    position: relative;
+}
+
+
+
 .card{
-    width: 80%;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    width: 90%;
+    display: inline-grid;
+    grid-template-columns: 2fr 3fr 2fr;
     grid-template-rows: 1fr 1fr 1fr;
     /* border: 1px solid black; */
-    height: 100px;
+    height: 80px;
     align-items: center;
     justify-items: center;
     background-color: #F2F2F2;
-    padding: 10px;
+    padding: .7em .7em;
     border-radius: 10px;
+    box-shadow: 2px 5px 5px rgb(205, 205, 205);
 }
+
+
+
+
 
 .thubnail{
     /* width: 20%; */
@@ -36,7 +48,7 @@
     color: rgba(0, 0, 0, .5);
     font-size: .8em;
     align-self: self-start;
-    margin-top: .5em;
+
 }
 
 .dishPrice{
@@ -49,7 +61,7 @@
 .label{
     grid-column: 3/4;
     grid-row: 1/4;
-    transform: scale(.9);
+    /* transform: scale(.9); */
     width: 100%;
 
 }
