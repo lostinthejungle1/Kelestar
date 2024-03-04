@@ -1,0 +1,32 @@
+.return_btn{
+    font-size: 2em;
+    margin-top: 1em;
+    margin-left: .3em;
+}
+
+.create_dish_form{
+    padding: 1.5em;
+    /* width: 90%; */
+}
+
+.instruction{
+    font-size: 2em;
+    color: #1E232C;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.ingredientsList{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    margin: 1em 0;
+}
+
+.modalForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
