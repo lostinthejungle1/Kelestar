@@ -1,0 +1,16 @@
+.tab{
+    box-sizing: border-box;
+    display: flex;
+    background-color: #F1F1F1;
+    color: #999999;
+    position: fixed;
+    bottom: 0;
+    padding: .4em;
+    width: 100%;
+    font-size: 2em;
+    justify-content: space-around;
+}
+
+.active{
+    color: #70E000;
+}
