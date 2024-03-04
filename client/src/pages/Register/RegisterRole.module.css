@@ -1,0 +1,31 @@
+.return_btn{
+    font-size: 2em;
+    margin-top: 1em;
+    margin-left: .3em;
+}
+
+.select_role_form{
+    padding: 1.5em;
+    /* width: 90%; */
+}
+
+.select_role_form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+}
+.text{
+    text-align: center;
+    /* padding: .5em; */
+    font-size: 1.2em;
+}
+
+.instruction{
+    font-size: 2em;
+    color: #1E232C;
+    margin: 0;
+    margin-bottom: 1em;
+    text-align: left;
+    width: 100%;
+}

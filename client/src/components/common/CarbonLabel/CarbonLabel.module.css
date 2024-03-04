@@ -7,16 +7,15 @@
 }
 
 .level{
-    width: 3em;
-    width: 50%;
+    width: 40%;
     display: block;
 }
 
 .categorization{
-    width: 50%;
+    width: 40%;
     
 }
 
 .number{
-    font-size: .7em;
+    font-size: .8em;
 }

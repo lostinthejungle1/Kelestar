@@ -1,0 +1,27 @@
+.return_btn{
+    font-size: 2em;
+    margin-top: 1em;
+    margin-left: .3em;
+}
+
+.register_vendor_form{
+    padding: 1.5em;
+    /* width: 90%; */
+}
+
+.instruction{
+    font-size: 2em;
+    color: #1E232C;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+
+
+.preview{
+    text-align: center;
+}
+
+.preview a{
+    color: #74B318;
+}

@@ -1,0 +1,19 @@
+.input-email input{
+    width: 90%;
+    font-size: 1.1em;
+    padding: .5em 1em;
+    border-radius: 10px;
+    border:2px solid #E8ECF4;
+    background-color: #F7F8F9;
+    margin-bottom: .4em;
+}
+
+.input-email input:focus{
+    outline-color: #74B318 ;
+}
+
+.input-email label{
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: .4em;
+}

@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: #74B318; */
 }
 
 .logo{
-    width: 50%;
+    width: 40%;
     box-shadow: 10px 10px 10px gray;
     border-radius: 30px;
     border: 1px solid rgba(226, 226, 226, 0.2);
@@ -15,12 +16,14 @@
 h1{
     font-size: 4em;
     color: #74B318;
-    margin-top: 1.8em;
+    margin-top: 1.3em;
 }
 
 .intro{
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #808080;
     width: 80%;
     margin-bottom: 2em;
+    text-align: center;
 }
+
