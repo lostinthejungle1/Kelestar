@@ -1,0 +1,43 @@
+.title{
+    font-size: 2em;
+
+}
+
+
+.tiles{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* gap: 1em; */
+    padding: .5em;
+}
+
+.tiles>*{
+    width: 70%;
+    justify-self: center;
+    margin-bottom: 1em;
+}
+
+.income_tile{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.footprint_tile{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.ranking_tile{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.green_meals_tile{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.main_content{
+    margin-bottom: 5em;
+}
