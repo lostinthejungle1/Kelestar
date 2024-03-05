@@ -5,7 +5,7 @@
     grid-template-rows: 1fr 1fr;
     background-color: #F8F9FA;
     padding: 1em;
-    width: 40%;
+    /* width: 40%; */
     box-shadow: 1px 2px 5px rgba(0, 0, 0,.3);
     border-radius: 10px;
 }
