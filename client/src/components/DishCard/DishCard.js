@@ -4,7 +4,7 @@ import CarbonLabel from "../common/CarbonLabel/CarbonLabel";
 import { FiDelete } from "react-icons/fi";
 import { CiEdit } from "react-icons/ci";
 //TODO: the swipe annimation needs to be optimized, currently its just usable but looks bad
-function DishCard({thumbnailURL,dishName,providingVendor,dishPrice,priceUnit,carbonLevel,footprintNumber,style}){
+function DishCard({thumbnailURL,dishName,providingVendor,dishPrice,priceUnit,carbonLevel,footprintNumber,style,handleEdit,handleDelete}){
     const [startX, setStartX] = useState(0);
     const [moveX, setMoveX] = useState(0);
     const [isSwiped, setIsSwiped] = useState(false);
@@ -32,6 +32,7 @@ function DishCard({thumbnailURL,dishName,providingVendor,dishPrice,priceUnit,car
     
       const resetSwipe = () => {
         setIsSwiped(false);
+        handleEdit();
       };
     return (
     <div style={style} className={styles.container} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
@@ -60,7 +61,7 @@ function DishCard({thumbnailURL,dishName,providingVendor,dishPrice,priceUnit,car
           height: '100%'
         }}>
           <button  onClick={resetSwipe} style={{ marginRight: '5px',fontSize:'1.5em',backgroundColor:'#FF5060',color:'white',padding:'.8em',border:'none' }}><CiEdit /></button>
-          <button style={{fontSize:'1.5em',backgroundColor:'#3D8BFD',color:'white',padding:'.8em',border:'none'  }}><FiDelete/></button>
+          <button onClick={handleDelete} style={{fontSize:'1.5em',backgroundColor:'#3D8BFD',color:'white',padding:'.8em',border:'none'  }}><FiDelete/></button>
         </div>
       )}
     </div>
