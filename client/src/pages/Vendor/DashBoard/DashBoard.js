@@ -3,8 +3,11 @@ import styles from './DashBoard.module.css';
 import VendorTab from "../../../components/VendorTab/VendorTab";
 import DashboardTile from "../../../components/DashboardTile/DashboardTile";
 
+
 import { Pie,Bar } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
+
+import { IoIosNotifications } from "react-icons/io";
 import { MdCo2 } from "react-icons/md";
 import { FaRankingStar } from "react-icons/fa6";
 import { LuSalad } from "react-icons/lu";
@@ -56,7 +59,12 @@ function DashBoard(){
     return (
         <div>
             <div className={styles.main_content}>
-              <h1 className={styles.title} >Vendor Dashboard</h1>
+              <header>
+                <h1 className={styles.title} >Vendor Dashboard</h1>
+                <IoIosNotifications className={styles.notify} />  
+              </header>
+              
+              
               <div className={styles.tiles}>
                   <DashboardTile className={styles.income_tile} Icon={AiOutlineMoneyCollect} iconStyle={{color:'#FFBB38',backgroundColor:'#FFF5D9'}} title='My income' value='RM 18888' />
                   <DashboardTile className={styles.footprint_tile} Icon={MdCo2} iconStyle={{color:'#74B318',backgroundColor:'#E6FFDF'}} title='Footprint' value='1673 Kg' />
