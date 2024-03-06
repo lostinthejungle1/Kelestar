@@ -28,7 +28,7 @@ function RegisterMenu(){
     const navigate = useNavigate();
     const handleSubmit = e=>{
         e.preventDefault();
-        navigate('/register-role')
+        navigate('/vendor/dashboard')
     }
     //TODO: Validate form 
     return (<div >
@@ -38,7 +38,7 @@ function RegisterMenu(){
         {/* update classname */}
         <form className={styles.register_menu_form} onSubmit={handleSubmit} novalidate>
             <h2 className={styles.instruction}>Let’s populate your menu</h2>
-            <Button style={{width:'50%',fontSize:'1em',marginBottom:'1em'}} onClick={()=>navigate('/vendor/create-dish')} color='green' content='+ Create new dish' />
+            <Button style={{width:'50%',fontSize:'1em',marginBottom:'1em'}} onClick={()=>navigate('/vendor/create-dish/register')} color='green' content='+ Create new dish' />
             <div className={styles.dishList}>
                 <label>Dish List</label>
                 {dishList.map(dish=><DishCard style={{marginBottom:'.8em'}} thumbnailURL={dish.thumbnailURL} dishName={dish.dishName} providingVendor={dish.providingVendor} dishPrice={dish.dishPrice} priceUnit={dish.priceUnit} carbonLevel={dish.carbonLevel} footprintNumber={dish.footprintNumber} />)}
