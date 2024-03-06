@@ -31,7 +31,7 @@ function HomeMenu(){
         <div>
             <div className={styles.main_content}>
                 <h1 className={styles.title}>Hello Poke2U</h1>
-                <CiEdit className={styles.edit_info_btn} />
+                <CiEdit onClick={()=>navigate('/vendor/register-vendor/edit')} className={styles.edit_info_btn} />
                 <div className={styles.vendor_info}>
                     <div className={styles.thumbnail_container}>
                         <img  alt='vendor thumbnail' src='https://www.indystar.com/gcdn/presto/2021/08/31/NPPP/e046fbb9-e459-4973-ae5c-e412a38b80bd-Sweetgreen_1.jpg?width=660&height=660&fit=crop&format=pjpg&auto=webp' />
