@@ -39,11 +39,13 @@ function DishCard({thumbnailURL,dishName,providingVendor,dishPrice,priceUnit,car
         transform: `translateX(${isSwiped ? '-130px' : '0px'})`,
         transition: 'transform 0.3s ease-out',
         backgroundColor: '#fff',
-        padding: '20px',
         borderRadius: '4px',
         boxShadow: '0 2px 4px rgba(0,0,0,0.2)'
       }}>
-            <img className={styles.thubnail} src={thumbnailURL} alt={dishName} />
+            <div className={styles.thubnail_container}>
+              <img className={styles.thubnail} src={thumbnailURL} alt={dishName} />
+            </div>
+            
             <span className={styles.dishName}>{dishName}</span>
             <span className={styles.providingVendor}>{`From ${providingVendor}`}</span>
             <span className={styles.dishPrice}>{`${priceUnit} ${dishPrice}`}</span>
