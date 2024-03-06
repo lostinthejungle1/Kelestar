@@ -12,7 +12,7 @@ function RegisterVendor(){
     const navigate = useNavigate();
     const handleSubmit = e=>{
         e.preventDefault();
-        navigate('/register-role')
+        navigate('/vendor/register-menu')
     }
     const {status} = useParams();
     console.log(status)
