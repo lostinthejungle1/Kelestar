@@ -9,11 +9,12 @@ import InputSelect from "../../../../components/common/Input/InputSelect/InputSe
 
 import { IoClose } from "react-icons/io5";
 import { IoIosArrowBack } from "react-icons/io";
-import {useNavigate} from 'react-router-dom';
+import {useNavigate,useParams} from 'react-router-dom';
 import styles from './CreateDish.module.css';
 
 
 function CreateDish(){
+    const {status} = useParams();
     // delete later
     const options= [{value:'Beef',optionShown:'BEEF',id:1},
     {value:'Poultry',optionShown:'POULTRY',id:2}]
@@ -35,10 +36,15 @@ function CreateDish(){
     //TODO: Validate form 
     return (<div >
         <IoIosArrowBack className={styles.return_btn} onClick={()=>{
-            navigate('/create-dish');
+            if(status==='register'){
+                navigate('/vendor/register-menu');    
+            }else if(status==='edit'){
+                navigate('/vendor/homemenu');
+            }
+           
         }} />
         <form className={styles.create_dish_form} onSubmit={handleSubmit} novalidate>
-            <h2 className={styles.instruction}>Create new dish</h2>
+            <h2 className={styles.instruction}>{status==='register'?"Create new dish":'Edit dish detail'}</h2>
             <InputText placeholder='Enter dish name' label='Dish name:' /> 
             <InputText placeholder='Enter dish price' label='Dish price:' /> 
             <ThumbnailUploader label="Dish thumbnail image:" />
