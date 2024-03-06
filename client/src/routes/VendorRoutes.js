@@ -11,8 +11,9 @@ const VendorRoutes = ()=>{
     return (
         <Routes>
             <Route path='/register-vendor' element={<RegisterVendor/>} />
-            <Route path='/register-menu' element={<RegisterMenu/>} />
-            <Route path='/create-dish' element={<CreateDish/>} />
+            <Route path='/register-menu/:status' element={<RegisterMenu/>} />
+            <Route path='/create-dish/:status' element={<CreateDish/>} />
+            {/* use url params here to deliver value, so we don't need to create another page for edit */}
             <Route path='/dashboard' element={<DashBoard/>} />
             <Route path='/homemenu' element={<HomeMenu/>} />
             <Route path='/me' element={<Me/>} />
