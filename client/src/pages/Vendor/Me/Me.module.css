@@ -27,4 +27,15 @@
     gap:1.5em;
     /* border: 1px solid red; */
     justify-content:center;
+    /* border: 1px solid black; */
+}
+
+.main_content{
+    margin-bottom: 5em;
+}
+
+.modules :nth-child(odd):nth-last-child(1){
+    /* margin-left: auto; */
+    margin-right: auto;
+    margin-left: 1.5em;
 }
