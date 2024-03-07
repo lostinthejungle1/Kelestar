@@ -1,0 +1,24 @@
+.tile{
+    width: 40%;
+    aspect-ratio: 1/1;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F9FA;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(202, 202, 202);
+}
+
+.icon{
+    font-size: 3em;
+    color: #ADB5BD;
+}
+
+.title{
+    width: 50%;
+    text-align: center;
+    margin-top: .5em;
+    color: #54595E;
+}
