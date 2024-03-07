@@ -1,0 +1,30 @@
+.account_info{
+    width: 90%;
+    /* border: 1px solid black; */
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thumbnail_container{
+    width: 30%;
+    aspect-ratio: 1/1;
+    /* border: 1px solid red; */
+    background: url('https://www.onlinedubaivisa.com/storage/blogs/17031438751694523034Daily%20food%20cost%20in%20Dubai.webp');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+.modules{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    /* justify-content: space-around; */
+    gap:1.5em;
+    /* border: 1px solid red; */
+    justify-content:center;
+}
